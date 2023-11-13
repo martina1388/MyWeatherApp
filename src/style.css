@@ -49,6 +49,7 @@ main {
     margin: 20px 0 10px;
     font-size: 38px;
     font-weight: 700;
+    text-transform: capitalize;
 }
 
 .weather-app-data {

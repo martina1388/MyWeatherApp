@@ -16,13 +16,14 @@
 <body>
     <div class=weather-app>
         <header>
-            <form>
-                <input type="search" placeholder="Enter a city" required class="search-form-input">
+            <form id="search-form">
+                <input type="search" placeholder="Enter a city" required class="search-form-input"
+                    id="search-form-input">
                 <input type="submit" value="Search" class="search-form-button">
             </form>
         </header>
         <main>
-            <h1 class="weather-app-city">Bad Wildungen</h1>
+            <h1 class="weather-app-city" id="city">Bad Wildungen</h1>
             <div class="weather-app-data">
                 <div class="weather-temperature-container">
                     <div class="weather-app-icon">☀️</div>
@@ -46,6 +47,7 @@
             and hosted on <a href="https://my-weather-app-mc.vercel.app/" target="_blank">Vercel</a>
         </footer>
     </div>
+    <script src="src/index.js"></script>
 </body>
 
 </html>
