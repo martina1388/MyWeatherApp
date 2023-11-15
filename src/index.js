@@ -1,7 +1,8 @@
 function sayWeather(response) {
+    let cityElement = document.querySelector("#city");
+    let iconElement = document.querySelector("#icon");
     let temperatureElement = document.querySelector("#temperature");
     let temperature = response.data.temperature.current;
-    let cityElement = document.querySelector("#city");
     let descriptionElement = document.querySelector("#description");
     let humidityElement = document.querySelector("#humidity");
     let windSpeedElement = document.querySelector("#wind-speed");
@@ -10,6 +11,7 @@ function sayWeather(response) {
     let date = new Date(response.data.time * 1000);
 
     cityElement.innerHTML = response.data.city;
+    iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`;
     temperatureElement.innerHTML= Math.round(temperature);
     timeElement.innerHTML = formatDate(date);
     descriptionElement.innerHTML = response.data.condition.description;
