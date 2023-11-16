@@ -39,6 +39,7 @@ header {
 .search-form-button:hover {
     color: #ffffff;
     background: #7909d6;
+    cursor: pointer;
 }
 
 main {
@@ -87,6 +88,33 @@ main {
     font-size: 30px;
     margin-top: 12px;
     color: #7909d6;
+}
+
+.weather-app-forecast {
+    text-align: center;
+    line-height: 60px;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    padding: 15px 30px;
+    width: 30px;
+    margin-top: 60px;
+
+}
+
+.forecast-icon {
+    font-size: 30px;
+}
+
+.forecast-temperatures {
+    display: flex;
+    justify-content: center;
+    column-gap: 6px;
+    font-size: 14px;
+}
+
+.forecast-temperature-min {
+    color: rgba(0, 0, 0, 0.7);
 }
 
 footer {
