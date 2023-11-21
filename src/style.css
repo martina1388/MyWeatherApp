@@ -39,11 +39,12 @@ header {
 .search-form-button:hover {
     color: #ffffff;
     background: #7909d6;
+    transition: all 200ms ease-in-out;
     cursor: pointer;
 }
 
 main {
-    padding: 40px 0px;
+    padding: 40px 0px 0px;
 }
 
 .weather-app-city {
@@ -76,7 +77,7 @@ main {
 
 .weather-app-icon {
     width: 100%;
-    margin-top: 3px;
+    margin-top: 7px;
 }
 
 .weather-app-temperature {
@@ -86,8 +87,8 @@ main {
 
 .weather-app-celsius-unit {
     font-size: 30px;
-    margin-top: 14px;
-    color: #7909d6;
+    margin-top: 18px;
+    color: rgb(122, 10, 214);
 }
 
 .weather-app-forecast {
@@ -95,36 +96,39 @@ main {
     justify-content: space-between;
     text-align: center;
     font-size: 18px;
-
-
     margin-top: 60px;
 
 }
 
 .col-2 {
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    border-radius: 4px;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+    border-radius: 8px;
     padding: 15px 30px;
     line-height: 60px;
+    margin: 0px 10px;
 }
 
 .forecast-icon {
-    font-size: 40px;
+    width: 80px;
+    height: 80px;
 }
 
 .forecast-temperatures {
-    font-size: 15px;
+    font-size: 18px;
+    color: rgb(122, 10, 214);
+    display: block;
+    margin: 0auto;
 }
 
-.forecast-temperature-min {
-    color: rgba(0, 0, 0, 0.7);
+.forecast-temperature-max {
+    font-weight: bold;
 }
 
 footer {
     border-bottom: 1px solid #7909d6;
     padding: 60px 0 0 0;
     text-align: center;
-    font-size: 12px;
+    font-size: 14px;
     color: rgba(0, 0, 0, 0.5)
 }
 
